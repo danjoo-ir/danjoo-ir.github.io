@@ -2,7 +2,7 @@
 title: "ریاضی پنجم، فصل اول، تمرین صفحه پنج"
 metadate: "hide"
 categories: [ ریاضی_پنجم ]
-image: "/assets/img/riazi/panjom/fasl_yek/items/riazi_panjom_fasl_aval_tamin_manj.jpg"
+image: "/assets/img/riazi/panjom/fasl_yek/items/riazi_panjom_fasl_aval_safhe_panj.jpg"
 aparat: "wgx1261"
 ---
 
