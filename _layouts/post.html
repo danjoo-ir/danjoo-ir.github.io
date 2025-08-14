@@ -23,16 +23,9 @@ layout: default
                         </small>
                         {{ content }}
                         {% if page.aparat %}
-                        <p>
-                            <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-                            <amp-iframe
-                                    width="640"
-                                    height="360"
-                                    sandbox="allow-scripts allow-same-origin"
-                                    layout="responsive"
-                                    frameborder="0"
-                                    src="https://www.aparat.com/video/video/embed/videohash/{{page.aparat}}/vt/frame?isamp">
-                            </amp-iframe>
+                        <p id="aparat_danjoo">
+                            <script type="text/JavaScript" src="https://www.aparat.com/embed/{{page.aparat}}?data[rnddiv]=aparat_danjoo&data[responsive]=yes">
+                            </script>
                         </p>
                         <p>
                             <a target="_blank" href="httpsL//aparat.com/v/{{page.aparat}}" class="btn btn-gray d-block font-weight-bold">
