@@ -6,9 +6,6 @@ layout: default
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <article class="card">
-                    {% if page.image %}
-                    <img class="card-img-top mb-2" src="{% if page.image contains " ://" %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ page.title }}">
-                    {% endif %}
                     <div class="card-body" style="direction: rtl;text-align: right;">
                         <h1 class="display-4">
                             {{page.title}}
