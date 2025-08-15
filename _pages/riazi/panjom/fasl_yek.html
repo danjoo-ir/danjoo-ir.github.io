@@ -12,23 +12,18 @@ permalink: "/riazi/panjom/fasl_yek"
 
     {% assign myposts = site.posts | where_exp: "p", "p.categories contains 'فصل_اول_ریاضی_پنجم'" %}
     {% for post in myposts %}
-    <p>ssss</p>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    {% endfor %}
-
-    
     <div class="container-fluid">
         <div class="card-columns">
-            <div class="card card-pin raco" style="min-height:250px;background:#333;">
+            <div class="card card-pin raco" style="background:#333;">
                 <div class="wrapcat">
                     <span class="gotopost">
-                        <a href="/riazi_panjom_fasl_yek_mabhas_addadnevisi" class="text-dark"><i class="fa fa-arrow-circle-left"></i> بیشتر</a>
+                        <a href="{{ post.url }}" class="text-dark"><i class="fa fa-arrow-circle-left"></i> بیشتر</a>
                     </span>
                 </div>
-                <a href="/riazi_panjom_fasl_yek_mabhas_addadnevisi">
-                    <img class="card-img" src="/assets/img/riazi/panjom/fasl_yek/items/riazi_panjom_fasl_yek_mabhas_adadnevisi.jpg" alt="ریاضی پنجم فصل اول">
+                <a href="{{ post.url }}">
+                    <img class="card-img" src="{% if page.image contains " ://" %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ page.title }}">
                     <div class="notraco">
-                        <h2 class="card-title title">مبحث عددنویسی</h2>
+                        <h3 class="card-title title">{{ post.title }}</h3>
                         <div class="more">
                             <i class="fa fa-arrow-circle-left text-muted" aria-hidden="true"></i>
                         </div>
@@ -37,5 +32,6 @@ permalink: "/riazi/panjom/fasl_yek"
             </div>
         </div>
     </div>
-  
+    {% endfor %}
+
 </section>
