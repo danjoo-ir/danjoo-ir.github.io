@@ -1,8 +1,7 @@
 ---
 title: "ریاضی پنجم فصل اول مبحث عددنویسی"
-metadate: "hide"
 categories: [ ریاضی_پنجم , عددنویسی, فصل_اول_ریاضی_پنجم ]
-image: "/assets/img/riazi/panjom/fasl_yek/items/riazi_panjom_fasl_aval_mabhas_adadnevisi.jpg"
+image: "/assets/img/riazi/panjom/fasl_yek/items/riazi_panjom_fasl_yek_mabhas_adadnevisi.jpg"
 aparat: "mvxh4p6"
 ---
 
