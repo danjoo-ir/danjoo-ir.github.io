@@ -10,9 +10,9 @@ permalink: "/riazi/panjom/fasl_yek"
         <h2 class="font-weight-bold title" style="text-align: right;">ریاضی پنجم فصل اول</h2>
     </div>
 
-    {% assign myposts = site.posts | where_exp: "p", "p.categories contains 'فصل_اول_ریاضی_پنجم'" %}
-    {% for post in myposts %}
     <div class="container-fluid">
+        {% assign myposts = site.posts | where_exp: "p", "p.categories contains 'فصل_اول_ریاضی_پنجم'" %}
+        {% for post in myposts %}
         <div class="card-columns">
             <div class="card card-pin raco" style="background:#333;">
                 <div class="wrapcat">
@@ -31,7 +31,7 @@ permalink: "/riazi/panjom/fasl_yek"
                 </a>
             </div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 
 </section>
