@@ -5,4 +5,4 @@ image: "/assets/img/riazi/panjom/fasl_yek/items/riazi_panjom_fasl_yek_mabhas_ada
 aparat: "mvxh4p6"
 ---
 
-در این مطلب با هم مبحث عددنویسی در فصل اول ریاضی پنجم را یاد میگیریم
+در این مطلب با هم مبحث عددنویسی در فصل اول ریاضی پنجم را یاد می‌گیریم
