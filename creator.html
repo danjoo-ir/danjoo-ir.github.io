@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#aa00ff" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo.png">
+    <title>متن ساز</title>
+    <style>
+        :root {
+            --bg: #0b1020;
+            --card: #121933;
+            --ink: #e8ecff;
+            --muted: #93a1c8;
+            --accent: #6ea8fe;
+            --ok: #22c55e;
+            --warn: #f59e0b;
+            --radius: 16px;
+            --pad: 16px;
+            --gap: 12px;
+            --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Tahoma", ui-sans-serif, system-ui, Segoe UI, Roboto, "Noto Sans", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+            background: radial-gradient(1200px 1200px at 90% -10%, #1b2550, var(--bg));
+            color: var(--ink);
+        }
+
+        .wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 24px;
+            display: grid;
+            gap: 20px;
+        }
+
+        button {
+            font-family: "Tahoma", ui-sans-serif, system-ui, Segoe UI, Roboto, "Noto Sans", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            font-family: "Tahoma", ui-sans-serif, system-ui, Segoe UI, Roboto, "Noto Sans", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        }
+
+        header {
+            display: grid;
+            gap: 6px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: clamp(22px, 2.6vw, 34px);
+            font-weight: 800;
+            letter-spacing: .3px;
+        }
+
+        header p {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 880px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background: linear-gradient(180deg, rgba(255, 255, 255, .04), rgba(255, 255, 255, .02));
+            border: 1px solid rgba(255, 255, 255, .08);
+            border-radius: var(--radius);
+            padding: calc(var(--pad) + 6px);
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(4px);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .hint {
+            color: var(--muted);
+            font-weight: 500;
+            font-size: 12px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            background: #0f1630;
+            border: 1px solid rgba(255, 255, 255, .08);
+            color: var(--ink);
+            border-radius: 12px;
+            padding: 12px 14px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color .2s ease, box-shadow .2s ease;
+            direction: rtl;
+        }
+
+        input[type="text"]:focus, textarea:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(110, 168, 254, .25);
+        }
+
+        textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--gap);
+        }
+
+        @media (min-width: 720px) {
+            .row.two {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .btns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        button {
+            appearance: none;
+            border: 0;
+            border-radius: 999px;
+            padding: 10px 16px;
+            font-weight: 700;
+            cursor: pointer;
+            background: var(--accent);
+            color: #0a0f1f;
+            box-shadow: var(--shadow);
+        }
+
+        button.secondary {
+            background: #23315f;
+            color: var(--ink);
+        }
+
+        button.ok {
+            background: var(--ok);
+            color: #06220f;
+        }
+
+        button.warn {
+            background: var(--warn);
+            color: #231a02;
+        }
+
+        .out {
+            font-family: "Tahoma", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+            white-space: pre;
+            line-height: 1.55;
+            background: #0a0f22;
+            border: 1px dashed rgba(255, 255, 255, .15);
+            border-radius: 12px;
+            padding: 14px;
+            min-height: 220px;
+            overflow: auto;
+            direction: ltr;
+        }
+
+        .footer {
+            color: var(--muted);
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .pill {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 999px;
+            background: #1d2854;
+            color: var(--ink);
+            font-size: 11px;
+            margin-inline-start: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <h1>سازنده</h1>
+    </header>
+
+    <div class="grid">
+        <section class="card" aria-labelledby="form-title">
+            <form id="fm-form" novalidate>
+                <div class="row">
+                    <div>
+                        <label for="url">نام فایل</label>
+                        <input id="url" name="url" type="text" required placeholder="مثلاً: raizi_panjom"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label for="title">عنوان</label>
+                        <input id="title" name="title" type="text" required placeholder="مثلاً: ریاضی پنجم فصل اول مبحث عددنویسی"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label for="description">توضیح</label>
+                        <textarea id="description" name="description" type="text" required placeholder="مثلاً: آموزش بخش دوم فصل اول"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label for="categories">دسته‌بندی‌ها</label>
+                        <textarea id="categories" name="categories" required placeholder="هر دسته در یک خط یا با ویرگول جدا کنید
+ریاضی_پنجم
+عددنویسی
+فصل_اول_ریاضی_پنجم"></textarea>
+                    </div>
+                </div>
+
+                <div class="row two">
+                    <div>
+                        <label for="image">آدرس تصویر</label>
+                        <input id="image" name="image" type="text" required placeholder="riazi_panjom_fasl_yek_mabhas_adadnevisi.jpg"/>
+                    </div>
+                    <div>
+                        <label for="aparat">کد فیلم</label>
+                        <input id="aparat" name="aparat" type="text" required placeholder="مثلاً: mvxh4p6"/>
+                    </div>
+                </div>
+
+                <div class="btns" style="margin-top:14px">
+                    <button type="button" id="btn-generate" class="ok">تولید</button>
+                    <button type="button" id="btn-copy" class="secondary">کپی</button>
+                    <button type="button" id="btn-download" class="secondary">دانلود</button>
+                    <button type="reset" class="warn">پاک‌سازی</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="card" aria-labelledby="out-title">
+            <h2 id="out-title">خروجی</h2>
+            <pre id="output" class="out" aria-live="polite" tabindex="0">---</pre>
+        </section>
+    </div>
+</div>
+
+<script>
+    (function () {
+        'use strict';
+
+        /** Small helper to build the YAML front matter safely */
+        class FrontMatterGenerator {
+            /** @param {{title:string,categories:string[],image:string,aparat:string,description:string}} model */
+            static build(model) {
+                var title = FrontMatterGenerator._q(model.title);
+                var description = FrontMatterGenerator._q(model.description);
+                var cats = (model.categories || []).map(FrontMatterGenerator._q).join(' , ');
+                var image = FrontMatterGenerator._q(model.image);
+                var aparat = FrontMatterGenerator._q(model.aparat);
+
+                var lines = [
+                    '---',
+                    'title: ' + title,
+                    'categories: [ ' + cats + ' ]',
+                    'image: ' + image,
+                    'aparat: ' + aparat,
+                    '---',
+                    '',
+                    description.replace(/"/g, '')
+                ];
+                return lines.join('\n');
+            }
+
+            static _q(v) {
+                return JSON.stringify(String(v ?? '').trim());
+            }
+        }
+
+        var elForm = document.getElementById('fm-form');
+        var elTitle = document.getElementById('title');
+        var elCats = document.getElementById('categories');
+        var elImage = document.getElementById('image');
+        var elAparat = document.getElementById('aparat');
+        var elDescription = document.getElementById('description');
+        var elUrl = document.getElementById('url');
+        var elOut = document.getElementById('output');
+
+        function parseCategories(raw) {
+            var parts = String(raw || '')
+                .replace(/\r/g, '\n')
+                .split(/[,\n]/)
+                .map(s => s.trim())
+                .filter(Boolean);
+            return [...new Set(parts)];
+        }
+
+        function validate() {
+            var ok = true;
+            [elTitle, elCats, elImage, elAparat, elDescription].forEach(i => {
+                if (!i.value.trim()) {
+                    i.setAttribute('aria-invalid', 'true');
+                    ok = false;
+                } else {
+                    i.removeAttribute('aria-invalid');
+                }
+            });
+            return ok;
+        }
+
+        function generate() {
+            if (!validate()) {
+                alert('لطفاً همه فیلدها را پر کنید.');
+                return;
+            }
+            var model = {
+                title: elTitle.value,
+                categories: parseCategories(elCats.value),
+                image: elImage.value,
+                aparat: elAparat.value,
+                description: elDescription.value
+            };
+            elOut.textContent = FrontMatterGenerator.build(model);
+        }
+
+        function copyOut() {
+            var text = elOut.textContent || '';
+            if (!text.trim()) {
+                generate();
+                text = elOut.textContent;
+            }
+            navigator.clipboard.writeText(text).then(() => {
+                toast('کپی شد');
+            }).catch(() => alert('کپی ناموفق بود'));
+        }
+
+        function downloadMd() {
+            var text = elOut.textContent || '';
+            if (!text.trim()) {
+                generate();
+                text = elOut.textContent;
+            }
+
+            var today = new Date().toISOString().split('T')[0]; // "2025-08-15"
+            var name = `${today}_${slugify(elUrl.value || 'post')}.md`;
+            var blob = new Blob([text + '\n'], {type: 'text/markdown;charset=utf-8'});
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = name;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            URL.revokeObjectURL(url);
+        }
+
+        function slugify(s) {
+            var v = String(s || '').trim();
+            v = v.replace(/[\u200C\u200F\u061C]/g, '');
+            v = v.replace(/[^a-zA-Z0-9\u0600-\u06FF\s-_]+/g, '');
+            v = v.replace(/[\s_]+/g, '-');
+            return v.toLowerCase() || 'post';
+        }
+
+        function toast(msg) {
+            var t = document.createElement('div');
+            t.textContent = msg;
+            t.style.cssText = 'position:fixed;inset-inline-end:16px;inset-block-end:16px;background:#182453;color:#e8ecff;padding:10px 14px;border-radius:12px;box-shadow:var(--shadow);z-index:9999;font-weight:700';
+            document.body.appendChild(t);
+            setTimeout(() => t.remove(), 1600);
+        }
+
+        document.getElementById('btn-generate').addEventListener('click', generate);
+        document.getElementById('btn-copy').addEventListener('click', copyOut);
+        document.getElementById('btn-download').addEventListener('click', downloadMd);
+
+        elForm.addEventListener('reset', () => {
+            setTimeout(() => {
+                elOut.textContent = '---';
+            }, 0);
+        });
+
+        // Live preview as user types (perf-friendly debounce)
+        var timer;
+        elForm.addEventListener('input', () => {
+            clearTimeout(timer);
+        });
+    })();
+</script>
+</body>
+</html>
