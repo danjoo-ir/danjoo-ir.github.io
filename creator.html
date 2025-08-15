@@ -370,7 +370,7 @@
             }
 
             var today = new Date().toISOString().split('T')[0]; // "2025-08-15"
-            var name = `${today}_${slugify(elUrl.value || 'post')}.md`;
+            var name = `${today}-${slugify(elUrl.value || 'post').replace('-','_')}.md`;
             var blob = new Blob([text + '\n'], {type: 'text/markdown;charset=utf-8'});
             var url = URL.createObjectURL(blob);
             var a = document.createElement('a');
