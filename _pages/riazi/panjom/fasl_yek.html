@@ -11,9 +11,10 @@ permalink: "/riazi/panjom/fasl_yek"
     </div>
 
     <div class="container-fluid">
-        {% assign myposts = site.posts | where_exp: "p", "p.categories contains 'فصل_اول_ریاضی_پنجم'" %}
-        {% for post in myposts %}
         <div class="card-columns">
+            {% assign myposts = site.posts | where_exp: "p", "p.categories contains 'فصل_اول_ریاضی_پنجم'" %}
+            {% for post in myposts %}
+
             <div class="card card-pin raco" style="background:#333;">
                 <div class="wrapcat">
                     <span class="gotopost">
@@ -23,15 +24,15 @@ permalink: "/riazi/panjom/fasl_yek"
                 <a href="{{ post.url }}">
                     <img class="card-img" src="{{ post.image }}" alt="{{ page.title }}">
                     <div class="notraco">
-                        <h3 class="card-title title">{{ post.title }}</h3>
+                        <h3 class="card-title title font-weight-normal">{{ post.title }}</h3>
                         <div class="more">
                             <i class="fa fa-arrow-circle-left text-muted" aria-hidden="true"></i>
                         </div>
                     </div>
                 </a>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 
 </section>
