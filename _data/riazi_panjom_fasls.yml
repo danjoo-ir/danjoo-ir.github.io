@@ -21,3 +21,7 @@
 - name: "فصل ششم"
   image: "/assets/img/riazi/panjom/fasl_shish/riazi_panjom_fasl_shish.jpg"
   link: "/riazi/panjom/fasl_shish"
+
+- name: "فصل هفت"
+  image: "/assets/img/riazi/panjom/fasl_shish/riazi_panjom_fasl_haft.jpg"
+  link: "/riazi/panjom/fasl_haft"
