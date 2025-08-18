@@ -1,0 +1,23 @@
+﻿- name: "فصل اول"
+  image: "/assets/img/riazi/panjom/fasl_yek/riazi_panjom_fasl_yek.jpg"
+  link: "/riazi/panjom/fasl_yek"
+
+- name: "فصل دوم"
+  image: "/assets/img/riazi/panjom/fasl_do/riazi_panjom_fasl_do.jpg"
+  link: "/riazi/panjom/fasl_yek"
+  
+- name: "فصل سوم"
+  image: "/assets/img/riazi/panjom/fasl_se/riazi_panjom_fasl_se.jpg"
+  link: "/riazi/panjom/fasl_se"
+  
+- name: "فصل چهارم"
+  image: "/assets/img/riazi/panjom/fasl_chahar/riazi_panjom_fasl_chahar.jpg"
+  link: "/riazi/panjom/fasl_chahar"
+  
+- name: "فصل پنجم"
+  image: "/assets/img/riazi/panjom/fasl_panj/riazi_panjom_fasl_panj.jpg"
+  link: "/riazi/panjom/fasl_panj"
+  
+- name: "فصل ششم"
+  image: "/assets/img/riazi/panjom/fasl_shish/riazi_panjom_fasl_shish.jpg"
+  link: "/riazi/panjom/fasl_shish"
