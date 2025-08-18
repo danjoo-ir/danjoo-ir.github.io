@@ -11,22 +11,26 @@ description: "دانجو"
     </div>
     <div class="container-fluid">
         <div class="card-columns">
+
+            {% for item in site.data.razi_paye %}
             <div class="card card-pin raco" style="min-height:250px;background:#333;">
                 <div class="wrapcat">
                     <span class="gotopost">
-                        <a href="/riazi/panjom" class="text-dark"><i class="fa fa-arrow-circle-left"></i> بیشتر</a>
+                        <a href="{{ item.link }}" class="text-dark"><i class="fa fa-arrow-circle-left"></i> بیشتر</a>
                     </span>
                 </div>
-                <a href="/riazi/panjom">
-                    <img class="card-img" src="/assets/img/riazi/panjom/riazi_panjom.jpg" alt="ریاضی پنجم">
+                <a href="{{ item.link }}">
+                    <img class="card-img" src="{{ item.image }}" alt="{{ item.name }}">
                     <div class="notraco">
-                        <h2 class="card-title title">ریاضی پنجم</h2>
+                        <h2 class="card-title title">{{ item.name }}</h2>
                         <div class="more">
                             <i class="fa fa-arrow-circle-left text-muted" aria-hidden="true"></i>
                         </div>
                     </div>
                 </a>
             </div>
+            {% endfor %}
+            
         </div>
     </div>
 
