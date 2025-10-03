@@ -1,0 +1,37 @@
+---
+title: "مطالعات اجتماعی پنجم"
+layout: default
+permalink: "/motaleat/panjom"
+---
+
+<section class="mt-4 mb-5" style="direction: rtl;text-align: right;">
+
+    <div class="container mb-4" style="direction: rtl;margin-right: 20px;">
+        <h2 class="font-weight-bold title" style="text-align: right;">مطالعات اجتماعی پنجم</h2>
+    </div>
+    <div class="container-fluid">
+        <div class="card-columns">
+
+            {% for item in site.data.motaleat_panjom_fasls %}
+            <div class="card card-pin raco" style="min-height:250px;background:#333;">
+                <div class="wrapcat">
+                    <span class="gotopost">
+                        <a href="{{ item.link }}" class="text-dark"><i class="fa fa-arrow-circle-left"></i> بیشتر</a>
+                    </span>
+                </div>
+                <a href="{{ item.link }}">
+                    <img class="card-img" src="{{ item.image }}" alt="مطالعات اجتماعی پنجم">
+                    <div class="notraco">
+                        <h2 class="card-title title">{{ item.name }}</h2>
+                        <div class="more">
+                            <i class="fa fa-arrow-circle-left text-muted" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+
+</section>

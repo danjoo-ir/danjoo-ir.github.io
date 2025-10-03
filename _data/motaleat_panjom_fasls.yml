@@ -1,0 +1,19 @@
+﻿- name: "فصل اول"
+  image: "/assets/img/motaleat/panjom/fasl_yek/motaleat_panjom_fasl_yek.jpg"
+  link: "/motaleat/panjom/fasl_yek"
+
+- name: "فصل دوم"
+  image: "/assets/img/motaleat/panjom/fasl_do/motaleat_panjom_fasl_do.jpg"
+  link: "/motaleat/panjom/fasl_do"
+  
+- name: "فصل سوم"
+  image: "/assets/img/motaleat/panjom/fasl_se/motaleat_panjom_fasl_se.jpg"
+  link: "/motaleat/panjom/fasl_se"
+  
+- name: "فصل چهارم"
+  image: "/assets/img/motaleat/panjom/fasl_chahar/motaleat_panjom_fasl_chahar.jpg"
+  link: "/motaleat/panjom/fasl_chahar"
+  
+- name: "فصل پنجم"
+  image: "/assets/img/motaleat/panjom/fasl_panj/motaleat_panjom_fasl_panj.jpg"
+  link: "/motaleat/panjom/fasl_panj"

@@ -1,0 +1,19 @@
+﻿- name: "فصل اول"
+  image: "/assets/img/oloom/panjom/fasl_yek/oloom_panjom_fasl_yek.jpg"
+  link: "/oloom/panjom/fasl_yek"
+
+- name: "فصل دوم"
+  image: "/assets/img/oloom/panjom/fasl_do/oloom_panjom_fasl_do.jpg"
+  link: "/oloom/panjom/fasl_do"
+  
+- name: "فصل سوم"
+  image: "/assets/img/oloom/panjom/fasl_se/oloom_panjom_fasl_se.jpg"
+  link: "/oloom/panjom/fasl_se"
+  
+- name: "فصل چهارم"
+  image: "/assets/img/oloom/panjom/fasl_chahar/oloom_panjom_fasl_chahar.jpg"
+  link: "/oloom/panjom/fasl_chahar"
+  
+- name: "فصل پنجم"
+  image: "/assets/img/oloom/panjom/fasl_panj/oloom_panjom_fasl_panj.jpg"
+  link: "/oloom/panjom/fasl_panj"
