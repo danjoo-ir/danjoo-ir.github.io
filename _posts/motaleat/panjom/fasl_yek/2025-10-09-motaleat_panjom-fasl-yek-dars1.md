@@ -1,7 +1,7 @@
 ---
 title: "مطالعات پنجم درس اول (من با دیگران ارتباط برقرار می کنم)"
 categories: [ "فصل_اول_مطالعات_اجتماعی_پنجم" , "مطالعات_پنجم" , "آموزش_ابتدایی" , "من_با_دیگران_ارتباط_برقرار_میکنم" , "درس_اول_مطالعات_پنجم" ]
-image: "assets/img/motaleat/panjom/fasl_yek/items/dars1"
+image: "/assets/img/motaleat/panjom/fasl_yek/items/motaleat_panjom_fasl_yek_dars1.jpg"
 aparat: "wgkimye"
 ---
 

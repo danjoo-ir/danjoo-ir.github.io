@@ -1,7 +1,7 @@
 ---
 title: "مطالعات پنجم فصل یک درس 2 (احساسات ما)"
 categories: [ "فصل_اول_مطالعات_اجتماعی_پنجم" , "درس_دوم_مطالعات_پنجم" , "احساسات_ما" , "آموزش_ابتدایی" , "مطالعات_پنجم" ]
-image: "assets/img/motaleat/panjom/fasl_yek/items/dars2"
+image: "/assets/img/motaleat/panjom/fasl_yek/items/motaleat_panjom_fasl_yek_dars2.jpg"
 aparat: "mk31a5"
 ---
 
