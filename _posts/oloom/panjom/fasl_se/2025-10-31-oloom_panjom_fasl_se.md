@@ -1,7 +1,7 @@
 ---
 title: "علوم پنجم فصل سوم مبحث رنگین کمان"
 categories: [ "فصل_سوم_علوم_پنجم" , "رنگین_کمان" , "منشور" , "ذره_بین" , "کانون_عدسی" , "عدسی" ]
-image: "/assets/img/oloom/panjom/fasl_do/items/oloom_panjom_fasl_do_rangin_kaman.jpg"
+image: "/assets/img/oloom/panjom/fasl_se/items/oloom_panjom_fasl_se_rangin_kaman.jpg"
 aparat: "slvu773"
 ---
 
