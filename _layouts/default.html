@@ -8,6 +8,8 @@
     <meta name="theme-color" content="#aa00ff" />
     {% seo %}
     <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/{{site.favicon}}">
+    <link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
+    <link rel="preconnect" href="https://code.jquery.com" crossorigin>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/font/Vazirmatn-font-face.css">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/bootstrap.css">
@@ -22,11 +24,12 @@
     <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarsDefault">
-    	<ul class="navbar-nav ml-auto align-items-center">
-    		{% include menu-header.html %}
-    	</ul>
+    <ul class="navbar-nav ml-auto align-items-center">
+    {% include menu-header.html %}
+    </ul>
     </div>
     </nav>
+    {% include seasonal-banner.html %}
     <div id="lunrsearchresults">
         <ul class="mb-0"></ul>
     </div>
