@@ -1,3 +1,7 @@
 ﻿- name: "مطالعات اجتماعی پنجم"
   image: "/assets/img/motaleat/panjom/motaleat_panjom.jpg"
   link: "/motaleat/panjom"
+  
+- name: "مطالعات اجتماعی ششم"
+  image: "/assets/img/motaleat/motaleat_sheshom.jpg"
+  link: "/motaleat/sheshom"  

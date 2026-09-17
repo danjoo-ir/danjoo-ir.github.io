@@ -1,3 +1,7 @@
 ﻿- name: "هدیه پنجم"
   image: "/assets/img/hadie/hadie_panjom.jpg"
   link: "/hadie/panjom"
+  
+- name: "هدیه ششم"
+  image: "/assets/img/hadie/hadie_sheshom.jpg"
+  link: "/hadie/sheshom"  
