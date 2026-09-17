@@ -1,0 +1,21 @@
+{% assign m = site.time | date: "%-m" %}
+{% assign season_fa = "زمستان" %}
+{% assign occasion_fa = "شب یلدا و آفاز سال نو میلادی" %}
+{% assign icon = "snowflake" %}
+{% if m == "3" or m == "4" or m == "5" %}
+  {% assign season_fa = "بهار" %}
+  {% assign occasion_fa = "شکوفایی طبیعت و آغاز سال تحصیلی جدید" %}
+  {% assign icon = "seedling" %}
+{% elsif m == "6" or m == "7" or m == "8" %}
+  {% assign season_fa = "تابستان" %}
+  {% assign occasion_fa = "تعطیلات و آمادگی برای پایه جدید" %}
+  {% assign icon = "sun" %}
+{% elsif m == "9" or m == "10" or m == "11" %}
+  {% assign season_fa = "پاییز" %}
+  {% assign occasion_fa = "مهرماه و بازگشایی مدارس" %}
+  {% assign icon = "leaf" %}
+{% endif %}
+<div class="season-banner">
+  <i class="fas fa-{{ icon }}" aria-hidden="true"></i>
+  <span>فصل {{ season_fa }} — {{ occasion_fa }}</span>
+</div>
