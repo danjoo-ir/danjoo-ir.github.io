@@ -1,0 +1,48 @@
+﻿- name: "فصل اول"
+  image: "/assets/img/oloom/sheshom/oloom_sheshom_fasl_yek.jpg"
+  link: "/oloom/sheshom/fasl_yek"
+
+- name: "فصل دوم"
+  image: "/assets/img/oloom/sheshom/oloom_sheshom_fasl_do.jpg"
+  link: "/oloom/sheshom/fasl_do"
+  
+- name: "فصل سوم"
+  image: "/assets/img/oloom/sheshom/oloom_sheshom_fasl_se.jpg"
+  link: "/oloom/sheshom/fasl_se"
+  
+- name: "فصل چهارم"
+  image: "/assets/img/oloom/sheshom/oloom_sheshom_fasl_chahar.jpg"
+  link: "/oloom/sheshom/fasl_chahar"
+  
+- name: "فصل پنجم"
+  image: "/assets/img/oloom/sheshom/oloom_sheshom_fasl_panj.jpg"
+  link: "/oloom/sheshom/fasl_panj"
+  
+- name: "فصل ششم"
+  image: "/assets/img/oloom/sheshom/fasl_shesh.jpg"
+  link: "/oloom/sheshom/fasl_shesh"
+
+- name: "فصل هفت"
+  image: "/assets/img/oloom/sheshom/fasl_haft.jpg"
+  link: "/oloom/sheshom/fasl_haft"
+
+- name: "فصل هشت"
+  image: "/assets/img/oloom/sheshom/fasl_hasht.jpg"
+  link: "/oloom/sheshom/fasl_hasht"
+
+- name: "فصل نه"
+  image: "/assets/img/oloom/sheshom/fasl_noh.jpg"
+  link: "/oloom/sheshom/fasl_noh"
+
+- name: "فصل ده"
+  image: "/assets/img/oloom/sheshom/fasl_dah.jpg"
+  link: "/oloom/sheshom/fasl_dah"
+
+- name: "فصل یازده"
+  image: "/assets/img/oloom/sheshom/fasl_yazdah.jpg"
+  link: "/oloom/sheshom/fasl_yazdah"
+
+- name: "فصل دوازده"
+  image: "/assets/img/oloom/sheshom/fasl_davazdah.jpg"
+  link: "/oloom/sheshom/fasl_davazdah"
+  

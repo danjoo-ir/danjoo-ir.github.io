@@ -1,3 +1,7 @@
 ﻿- name: "فارسی پنجم"
   image: "/assets/img/farsi/farsi_panjom.jpg"
   link: "/farsi/panjom"
+  
+- name: "فارسی ششم"
+  image: "/assets/img/farsi/farsi_sheshom.jpg"
+  link: "/farsi/sheshom"  
