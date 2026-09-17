@@ -17,3 +17,32 @@
 - name: "فصل پنجم"
   image: "/assets/img/oloom/panjom/fasl_panj/oloom_panjom_fasl_panj.jpg"
   link: "/oloom/panjom/fasl_panj"
+  
+- name: "فصل ششم"
+  image: "/assets/img/oloom/panjom/fasl_shesh.jpg"
+  link: "/oloom/panjom/fasl_shesh"
+
+- name: "فصل هفت"
+  image: "/assets/img/oloom/panjom/fasl_haft.jpg"
+  link: "/oloom/panjom/fasl_haft"
+
+- name: "فصل هشت"
+  image: "/assets/img/oloom/panjom/fasl_hasht.jpg"
+  link: "/oloom/panjom/fasl_hasht"
+
+- name: "فصل نه"
+  image: "/assets/img/oloom/panjom/fasl_noh.jpg"
+  link: "/oloom/panjom/fasl_noh"
+
+- name: "فصل ده"
+  image: "/assets/img/oloom/panjom/fasl_dah.jpg"
+  link: "/oloom/panjom/fasl_dah"
+
+- name: "فصل یازده"
+  image: "/assets/img/oloom/panjom/fasl_yazdah.jpg"
+  link: "/oloom/panjom/fasl_yazdah"
+
+- name: "فصل دوازده"
+  image: "/assets/img/oloom/panjom/fasl_davazdah.jpg"
+  link: "/oloom/panjom/fasl_davazdah"
+  
