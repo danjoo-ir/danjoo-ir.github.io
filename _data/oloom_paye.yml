@@ -1,3 +1,7 @@
 ﻿- name: "علوم پنجم"
   image: "/assets/img/oloom/panjom/oloom_panjom.jpg"
   link: "/oloom/panjom"
+  
+- name: "علوم ششم"
+  image: "/assets/img/oloom/oloom_sheshom.jpg"
+  link: "/oloom/sheshom"  

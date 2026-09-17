@@ -90,5 +90,60 @@ description: "دانجو"
         </div>
     </div>
 
+    <div class="container mb-4" style="direction: rtl;margin-right: 20px;">
+        <h2 class="font-weight-bold title" style="text-align: right;">فارسی</h2>
+    </div>
+    <div class="container-fluid">
+        <div class="card-columns">
 
+            {% for item in site.data.farsi_paye %}
+            <div class="card card-pin raco" style="min-height:250px;background:#333;">
+                <div class="wrapcat">
+                    <span class="gotopost">
+                        <a href="{{ item.link }}" class="text-dark"><i class="fa fa-arrow-circle-left"></i> بیشتر</a>
+                    </span>
+                </div>
+                <a href="{{ item.link }}">
+                    <img class="card-img" src="{{ item.image }}" alt="{{ item.name }}">
+                    <div class="notraco">
+                        <h2 class="card-title title">{{ item.name }}</h2>
+                        <div class="more">
+                            <i class="fa fa-arrow-circle-left text-muted" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+
+    <div class="container mb-4" style="direction: rtl;margin-right: 20px;">
+        <h2 class="font-weight-bold title" style="text-align: right;">هدیه</h2>
+    </div>
+    <div class="container-fluid">
+        <div class="card-columns">
+
+            {% for item in site.data.hadie_paye %}
+            <div class="card card-pin raco" style="min-height:250px;background:#333;">
+                <div class="wrapcat">
+                    <span class="gotopost">
+                        <a href="{{ item.link }}" class="text-dark"><i class="fa fa-arrow-circle-left"></i> بیشتر</a>
+                    </span>
+                </div>
+                <a href="{{ item.link }}">
+                    <img class="card-img" src="{{ item.image }}" alt="{{ item.name }}">
+                    <div class="notraco">
+                        <h2 class="card-title title">{{ item.name }}</h2>
+                        <div class="more">
+                            <i class="fa fa-arrow-circle-left text-muted" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+    
 </section>

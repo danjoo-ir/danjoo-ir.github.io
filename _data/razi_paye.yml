@@ -1,3 +1,7 @@
 ﻿- name: "ریاضی پنجم"
   image: "/assets/img/riazi/panjom/riazi_panjom.jpg"
   link: "/riazi/panjom"
+  
+- name: "ریاضی ششم"
+  image: "/assets/img/riazi/riazi_sheshom.jpg"
+  link: "/riazi/sheshom"  
