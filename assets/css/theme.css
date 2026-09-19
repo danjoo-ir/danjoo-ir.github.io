@@ -216,7 +216,7 @@ h2.title {
 }
 
 .vid-image{
-  height: 200px;
+  height: 200px !important;
 }
 
 .card.card-pin.raco:hover .card-img { transform: scale(1.07); }
