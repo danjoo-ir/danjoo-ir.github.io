@@ -209,7 +209,7 @@ h2.title {
 
 .card.card-pin.raco .card-img {
   width: 100%;
-  height: 250px;
+  height: 350px;
   object-fit: cover;
   display: block;
   transition: transform .4s var(--transition);
@@ -271,8 +271,8 @@ h2.title {
 /* Footer                                                                  */
 /* ---------------------------------------------------------------------- */
 footer.footer {
-  background: var(--ink);
-  color: #cfd3da;
+  background: var(--season-3);
+  color: var(--ink);
   margin-top: 3rem;
 }
 
