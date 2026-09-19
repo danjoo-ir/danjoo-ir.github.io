@@ -1,0 +1,23 @@
+﻿- name: "فصل اول"
+  image: "/assets/img/farsi/sheshom/main/farsi_sheshom_fasl_yek.jpg"
+  link: "/farsi/sheshom/fasl_yek"
+
+- name: "فصل دوم"
+  image: "/assets/img/farsi/sheshom/main/farsi_sheshom_fasl_do.jpg"
+  link: "/farsi/sheshom/fasl_do"
+  
+- name: "فصل سوم"
+  image: "/assets/img/farsi/sheshom/main/farsi_sheshom_fasl_se.jpg"
+  link: "/farsi/sheshom/fasl_se"
+  
+- name: "فصل چهارم"
+  image: "/assets/img/farsi/sheshom/main/farsi_sheshom_fasl_chahar.jpg"
+  link: "/farsi/sheshom/fasl_chahar"
+  
+- name: "فصل پنجم"
+  image: "/assets/img/farsi/sheshom/main/farsi_sheshom_fasl_panj.jpg"
+  link: "/farsi/sheshom/fasl_panj"
+  
+- name: "فصل ششم"
+  image: "/assets/img/farsi/sheshom/main/farsi_sheshom_fasl_shish.jpg"
+  link: "/farsi/sheshom/fasl_shish"
