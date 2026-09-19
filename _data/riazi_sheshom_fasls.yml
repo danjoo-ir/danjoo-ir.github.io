@@ -1,27 +1,27 @@
 ﻿- name: "فصل اول"
-  image: "/assets/img/riazi/sheshom/riazi_sheshom_fasl_yek.jpg"
+  image: "/assets/img/riazi/sheshom/main/riazi_sheshom_fasl_yek.jpg"
   link: "/riazi/sheshom/fasl_yek"
 
 - name: "فصل دوم"
-  image: "/assets/img/riazi/sheshom/riazi_sheshom_fasl_do.jpg"
+  image: "/assets/img/riazi/sheshom/main/riazi_sheshom_fasl_do.jpg"
   link: "/riazi/sheshom/fasl_do"
   
 - name: "فصل سوم"
-  image: "/assets/img/riazi/sheshom/riazi_sheshom_fasl_se.jpg"
+  image: "/assets/img/riazi/sheshom/main/riazi_sheshom_fasl_se.jpg"
   link: "/riazi/sheshom/fasl_se"
   
 - name: "فصل چهارم"
-  image: "/assets/img/riazi/sheshom/riazi_sheshom_fasl_chahar.jpg"
+  image: "/assets/img/riazi/sheshom/main/riazi_sheshom_fasl_chahar.jpg"
   link: "/riazi/sheshom/fasl_chahar"
   
 - name: "فصل پنجم"
-  image: "/assets/img/riazi/sheshom/fasl_panj/riazi_sheshom_fasl_panj.jpg"
+  image: "/assets/img/riazi/sheshom/fasl_panj/main/riazi_sheshom_fasl_panj.jpg"
   link: "/riazi/sheshom/fasl_panj"
   
 - name: "فصل ششم"
-  image: "/assets/img/riazi/sheshom/fasl_shish/riazi_sheshom_fasl_shish.jpg"
+  image: "/assets/img/riazi/sheshom/fasl_shish/main/riazi_sheshom_fasl_shish.jpg"
   link: "/riazi/sheshom/fasl_shish"
 
 - name: "فصل هفت"
-  image: "/assets/img/riazi/sheshom/fasl_haft/riazi_sheshom_fasl_haft.jpg"
+  image: "/assets/img/riazi/sheshom/fasl_haft/main/riazi_sheshom_fasl_haft.jpg"
   link: "/riazi/sheshom/fasl_haft"
